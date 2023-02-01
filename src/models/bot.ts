@@ -133,6 +133,8 @@ export class Bot {
             if (!msg) {
                 return;
             }
+            
+            console.log(msg)
 
             await this.messageHandler.process(msg);
         } catch (error) {

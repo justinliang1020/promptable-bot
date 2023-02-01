@@ -48,4 +48,11 @@ export class Args {
             },
         ],
     };
+    public static readonly PROMPTABLE_OPTION: APIApplicationCommandBasicOption = {
+        name: Lang.getRef('arguments.prompt', Language.Default),
+        name_localizations: Lang.getRefLocalizationMap('arguments.prompt'),
+        description: Lang.getRef('argDescs.promptOption', Language.Default),
+        description_localizations: Lang.getRefLocalizationMap('argDescs.promptOption'),
+        type: ApplicationCommandOptionType.String,
+    };
 }

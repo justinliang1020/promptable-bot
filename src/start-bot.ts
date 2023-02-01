@@ -3,7 +3,7 @@ import { Options, Partials } from 'discord.js';
 import { createRequire } from 'node:module';
 
 import { Button } from './buttons/index.js';
-import { HelpCommand, InfoCommand, TestCommand } from './commands/chat/index.js';
+import { HelpCommand, InfoCommand, TestCommand, PromptableCommand } from './commands/chat/index.js';
 import {
     ChatCommandMetadata,
     Command,
@@ -59,6 +59,7 @@ async function start(): Promise<void> {
         new HelpCommand(),
         new InfoCommand(),
         new TestCommand(),
+        new PromptableCommand(),
 
         // Message Context Commands
         new ViewDateSent(),
@@ -110,6 +111,8 @@ async function start(): Promise<void> {
         reactionHandler,
         new JobService(jobs)
     );
+
+    // console.log('hello')
 
     // Register
     if (process.argv[2] == 'commands') {

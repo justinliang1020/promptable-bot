@@ -3,15 +3,22 @@
         "displayEmbeds": {
             "welcome": {
                 "title": "Thank you for using {{COM:bot.name}}!",
-                "description": ["{{REF:bot.description}}"],
+                "description": [
+                    "{{REF:bot.description}}"
+                ],
                 "fields": [
                     {
                         "name": "Important {{REF:fields.commands}}",
-                        "value": ["{{CMD_LINK_HELP}} - {{REF:commandDescs.help}}"]
+                        "value": [
+                            "{{CMD_LINK_HELP}} - {{REF:commandDescs.help}}"
+                        ]
                     },
                     {
                         "name": "{{REF:fields.links}}",
-                        "value": ["{{REF:links.docsEmbed}}", "{{REF:links.supportEmbed}}"]
+                        "value": [
+                            "{{REF:links.docsEmbed}}",
+                            "{{REF:links.supportEmbed}}"
+                        ]
                     }
                 ]
             },
@@ -23,7 +30,9 @@
                 "fields": [
                     {
                         "name": "{{REF:fields.links}}",
-                        "value": ["{{REF:links.supportEmbed}}"]
+                        "value": [
+                            "{{REF:links.supportEmbed}}"
+                        ]
                     }
                 ]
             },
@@ -47,7 +56,10 @@
                     },
                     {
                         "name": "{{REF:fields.links}}",
-                        "value": ["{{REF:links.docsEmbed}}", "{{REF:links.supportEmbed}}"]
+                        "value": [
+                            "{{REF:links.docsEmbed}}",
+                            "{{REF:links.supportEmbed}}"
+                        ]
                     }
                 ]
             },
@@ -64,7 +76,10 @@
                 "title": "{{COM:bot.name}} - About",
                 "description": "{{REF:bot.description}}",
                 "fields": [
-                    { "name": "Author", "value": "{{REF:links.authorEmbed}}" },
+                    {
+                        "name": "Author",
+                        "value": "{{REF:links.authorEmbed}}"
+                    },
                     {
                         "name": "{{REF:fields.links}}",
                         "value": [
@@ -78,7 +93,9 @@
                     },
                     {
                         "name": "Created With",
-                        "value": ["{{REF:links.templateEmbed}}"]
+                        "value": [
+                            "{{REF:links.templateEmbed}}"
+                        ]
                     }
                 ]
             },
@@ -190,7 +207,8 @@
         "chatCommands": {
             "help": "help",
             "info": "info",
-            "test": "test"
+            "test": "test",
+            "promptable": "promptable"
         },
         "userCommands": {
             "viewDateJoined": "View Date Joined"
@@ -199,16 +217,19 @@
             "viewDateSent": "View Date Sent"
         },
         "arguments": {
-            "option": "option"
+            "option": "option",
+            "prompt": "prompt"
         },
         "commandDescs": {
             "help": "Find help or contact support.",
             "info": "View bot info.",
-            "test": "Run the test command."
+            "test": "Run the test command.",
+            "promptable": "Ask Promptable Bot a question"
         },
         "argDescs": {
             "helpOption": "Option.",
-            "infoOption": "Option."
+            "infoOption": "Option.",
+            "promptOption": "Prompt."
         },
         "fields": {
             "commands": "Commands",

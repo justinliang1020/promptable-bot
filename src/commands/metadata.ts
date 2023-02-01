@@ -50,6 +50,21 @@ export const ChatCommandMetadata: {
         dm_permission: true,
         default_member_permissions: undefined,
     },
+    PROMPTABLE: {
+        type: ApplicationCommandType.ChatInput,
+        name: Lang.getRef('chatCommands.promptable', Language.Default),
+        name_localizations: Lang.getRefLocalizationMap('chatCommands.promptable'),
+        description: Lang.getRef('commandDescs.promptable', Language.Default),
+        description_localizations: Lang.getRefLocalizationMap('commandDescs.promptable'),
+        dm_permission: true,
+        default_member_permissions: undefined,
+        options: [
+            {
+                ...Args.PROMPTABLE_OPTION,
+                required: true,
+            },
+        ],
+    },
 };
 
 export const MessageCommandMetadata: {
