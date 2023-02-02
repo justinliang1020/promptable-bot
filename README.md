@@ -12,15 +12,15 @@ Relevant code for the `/promptable` Discord command can be found in `/src/comman
 
 1. Clone the repo
 2. Copy .env.example to .env and fill out fields.
-    a. OPENAI_API_KEY can be found [here](https://platform.openai.com/account/api-keys)
-    b. Set up your own bot in the [Discord Developer Portal](https://discord.com/developers/docs/getting-started#creating-an-app) for dev purposes and to obtain the rest of the env variables
-    c. DISCORD_CLIENT_ID: General Information -> Application ID
-    d. DISCORD_CLIENT_TOKEN: Bot -> Token
+  - OPENAI_API_KEY can be found [here](https://platform.openai.com/account/api-keys)
+  - Set up your own bot in the [Discord Developer Portal](https://discord.com/developers/docs/getting-started#creating-an-app) for dev purposes and to obtain the rest of the env variables
+  - DISCORD_CLIENT_ID: General Information -> Application ID
+  - DISCORD_CLIENT_TOKEN: Bot -> Token
 3. Install the app onto your own Discord server to test the bot.
 4. Run the following:
-a. `npm install`
-b. `npm run commands:register`
-b. `npm start`
+  - `npm install`
+  - `npm run commands:register`
+  - `npm start`
 
 Note: when adding add new commands, run `npm run commands:register`
 
