@@ -33,7 +33,7 @@ export class PromptableCommand implements Command {
         });
 
         const response = `${intr.user.username}'s prompt: ${args.prompt}
-Response: This is the OpenAI API completion for the prompt: ${completion.data.choices[0].text}`;
+${completion.data.choices[0].text}`;
         
         await InteractionUtils.send(intr, response);
     }
