@@ -18,6 +18,8 @@ export class PromptableCommand implements Command {
         }
         console.log(args);
         console.log(intr.user.username);
-        await InteractionUtils.send(intr, `your input: ${args.prompt}`);
+        const response = `${intr.user.username}'s prompt: ${args.prompt}
+Response: This is a response for the prompt, ${args.prompt}`;
+        await InteractionUtils.send(intr, response);
     }
 }
