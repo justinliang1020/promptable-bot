@@ -1,5 +1,7 @@
 # Promptable Bot
 
+<img width="413" alt="image" src="https://user-images.githubusercontent.com/54543035/216459347-fa8b878e-b24e-46c7-9521-dfce5cfec683.png">
+
 This is a bot for the promptable.ai Discord server
 
 ## Introduction
