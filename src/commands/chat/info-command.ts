@@ -3,6 +3,7 @@ import { createRequire } from 'node:module';
 import os from 'node:os';
 import typescript from 'typescript';
 
+import Config from '../../../config/config.js';
 import { InfoOption } from '../../enums/index.js';
 import { Language } from '../../models/enum-helpers/index.js';
 import { EventData } from '../../models/internal-models.js';
@@ -11,7 +12,6 @@ import { FormatUtils, InteractionUtils, ShardUtils } from '../../utils/index.js'
 import { Command, CommandDeferType } from '../index.js';
 
 const require = createRequire(import.meta.url);
-let Config = require('../../../config/config.json');
 let TsConfig = require('../../../tsconfig.json');
 
 export class InfoCommand implements Command {

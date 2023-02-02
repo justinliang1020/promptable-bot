@@ -2,8 +2,9 @@ import { REST } from '@discordjs/rest';
 import { Options, Partials } from 'discord.js';
 import { createRequire } from 'node:module';
 
+import Config from '../config/config.js';
 import { Button } from './buttons/index.js';
-import { HelpCommand, InfoCommand, TestCommand, PromptableCommand } from './commands/chat/index.js';
+import { HelpCommand, InfoCommand, PromptableCommand, TestCommand } from './commands/chat/index.js';
 import {
     ChatCommandMetadata,
     Command,
@@ -34,7 +35,6 @@ import {
 import { Trigger } from './triggers/index.js';
 
 const require = createRequire(import.meta.url);
-let Config = require('../config/config.json');
 let Logs = require('../lang/logs.json');
 
 async function start(): Promise<void> {
@@ -44,7 +44,7 @@ async function start(): Promise<void> {
     // Client
     let client = new CustomClient({
         intents: Config.client.intents,
-        partials: (Config.client.partials as string[]).map(partial => Partials[partial]),
+        partials: (Config.client.partials ).map(partial => Partials[partial]),
         makeCache: Options.cacheWithLimits({
             // Keep default caching behavior
             ...Options.DefaultMakeCacheSettings,
