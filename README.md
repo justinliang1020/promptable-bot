@@ -18,11 +18,15 @@ Relevant code for the `/promptable` Discord command can be found in `/src/comman
     d. DISCORD_CLIENT_TOKEN: Bot -> Token
 3. Install the app onto your own Discord server to test the bot.
 4. Run the following:
-a. `npm install`
-b. `npm run commands:register`
-b. `npm start`
+    a. `npm install`
+    b. `npm run commands:register`
+    c. `npm start`
+5. In the discord server where you added the bot, run `/promptable {your prompt}`
+    a. you may need to restart discord if commands don't appear/autocomplete
 
-Note: when adding add new commands, run `npm run commands:register`
+Note: when adding add new commands, run `npm run commands:register`  
+Note: hot-reload is currently not enabled
+
 
 ## Deployment
 

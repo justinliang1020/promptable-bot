@@ -29,8 +29,19 @@ export class PromptableCommand implements Command {
         const completion = await openai.createCompletion({
             model: 'text-davinci-003',
             prompt: args.prompt,
-            temperature: 0.3
+            temperature: 0.3,
+            max_tokens: 4000,
         });
+        
+        // const completionText = (() : string=> {
+        //     let concatenatedString = '';
+        //     for (const line of completion.data) {
+        //         concatenatedString += line.text;
+        //     }
+        //     return concatenatedString;
+        // })
+
+        console.log(completion.data.choices[0].text);
 
         const response = `${intr.user.username}'s prompt: ${args.prompt}
 ${completion.data.choices[0].text}`;
